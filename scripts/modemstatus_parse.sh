@@ -266,6 +266,7 @@ case $RAT in
 			CHANNEL=$(echo $QENG5 | cut -d, -f10)
 			LBAND=$(echo $QENG5 | cut -d, -f11)
 			BW=$(echo $QENG5 | cut -d, -f12)
+   			nr_bw
 			LBAND="n"$LBAND" (Bandwidth $BW MHz)"
 			RSCP=$(echo $QENG5 | cut -d, -f13)
 			ECIO=$(echo $QENG5 | cut -d, -f14)
